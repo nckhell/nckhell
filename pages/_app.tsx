@@ -1,8 +1,10 @@
 import '../styles/globals.css'
 import '../styles/tooltip.css'
-import { AppContext, AppInitialProps, AppLayoutProps } from 'next/app'
+
 import type { NextComponentType } from 'next'
+import { AppContext, AppInitialProps, AppLayoutProps } from 'next/app'
 import { ReactNode } from 'react'
+
 import { AppProvider } from '../contexts/app/AppContext'
 
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({

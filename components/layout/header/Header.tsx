@@ -1,10 +1,11 @@
-import { useContext } from 'react'
-import { AppContext } from '../../../contexts/app/AppContext'
-import { Nav } from './nav'
-import { Tooltip } from '../../tooltip'
 import Image from 'next/image'
+import { useContext } from 'react'
+
+import { AppContext } from '../../../contexts/app/AppContext'
 import profilePic from '../../../public/images/nick.jpeg'
 import { Button } from '../../button'
+import { Tooltip } from '../../tooltip'
+import { Nav } from './nav'
 
 export const Header = () => {
   const { appState } = useContext(AppContext)

@@ -1,7 +1,8 @@
+import Head from 'next/head'
 import { ReactNode } from 'react'
 import { useContext } from 'react'
+
 import { AppContext } from '../../contexts/app/AppContext'
-import Head from 'next/head'
 import { Footer } from './footer'
 import { Header } from './header'
 

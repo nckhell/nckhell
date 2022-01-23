@@ -1,13 +1,13 @@
 import { InputSizeType, InputTypeType } from './input.types'
 import {
   baseStyles,
-  inputSizesStyles,
   DEFAULT_INPUT_SIZE,
-  labelStyles,
   disabledStyles,
-  labelHasErrorStyles,
-  inputHasErrorStyles,
   errorDetailsStyles,
+  inputHasErrorStyles,
+  inputSizesStyles,
+  labelHasErrorStyles,
+  labelStyles,
 } from './inputStyles'
 
 interface ButtonProps {

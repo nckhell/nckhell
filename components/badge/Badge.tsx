@@ -1,8 +1,8 @@
-import { BadgeSizeType, BadgeColorType } from './badge.types'
+import { BadgeColorType, BadgeSizeType } from './badge.types'
 import {
-  baseStyles,
-  badgeSizes,
   badgeColors,
+  badgeSizes,
+  baseStyles,
   DEFAULT_BADGE_COLOR,
   DEFAULT_BADGE_SIZE,
   withIconStyle,

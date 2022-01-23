@@ -1,4 +1,4 @@
-import { BadgeSizeType, BadgeColorType } from './badge.types'
+import { BadgeColorType,BadgeSizeType } from './badge.types'
 
 export const DEFAULT_BADGE_SIZE: BadgeSizeType = 'base'
 export const DEFAULT_BADGE_COLOR: BadgeColorType = 'gray'

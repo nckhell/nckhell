@@ -1,5 +1,5 @@
-import { Tooltip } from '../../../tooltip'
 import type { MenuItemType } from '../../../../content/menu'
+import { Tooltip } from '../../../tooltip'
 
 const navStyles = 'text-xl font-bold py-3 block hover:text-pink-500 underline'
 

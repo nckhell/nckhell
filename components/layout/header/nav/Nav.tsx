@@ -1,8 +1,9 @@
 import { useContext } from 'react'
+
 import { menu } from '../../../../content/menu'
+import { AppContext } from '../../../../contexts/app/AppContext'
 import { DesktopMenu } from './DesktopMenu'
 import { MobileMenu } from './MobileMenu'
-import { AppContext } from '../../../../contexts/app/AppContext'
 
 export const Nav = () => {
   const { appState, setAppState } = useContext(AppContext)

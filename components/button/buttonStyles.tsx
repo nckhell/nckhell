@@ -1,7 +1,7 @@
 import {
-  ButtonSizeType,
   ButtonColorType,
   ButtonShadowDirectionType,
+  ButtonSizeType,
 } from './button.types'
 
 export const DEFAULT_BUTTON_SIZE: ButtonSizeType = 'base'

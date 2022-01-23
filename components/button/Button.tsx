@@ -1,15 +1,16 @@
 import { ReactNode } from 'react'
+
 import {
-  ButtonSizeType,
-  ButtonShadowDirectionType,
   ButtonColorType,
+  ButtonShadowDirectionType,
+  ButtonSizeType,
 } from './button.types'
 import {
-  buttonSizes,
   buttonColors,
-  DEFAULT_SHADOW_DIRECTION,
+  buttonSizes,
   DEFAULT_BUTTON_COLOR,
   DEFAULT_BUTTON_SIZE,
+  DEFAULT_SHADOW_DIRECTION,
 } from './buttonStyles'
 
 interface ButtonProps {
