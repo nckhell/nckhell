@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
-
+import { useContext } from 'react'
+import { AppContext } from '../../contexts/app/AppContext'
 import Head from 'next/head'
 import { Footer } from './footer'
 import { Header } from './header'
@@ -9,6 +10,8 @@ interface LayoutProps {
 }
 
 export const Layout = ({ children }: LayoutProps) => {
+  const { appState } = useContext(AppContext)
+
   return (
     <>
       <Head>
@@ -20,7 +23,13 @@ export const Layout = ({ children }: LayoutProps) => {
       </Head>
       <div className="flex flex-col h-screen justify-between">
         <Header />
-        <main className="mb-auto">{children}</main>
+        <main
+          className={`mb-auto ${
+            appState.isMobileMenuOpen ? 'hidden' : 'block'
+          }`}
+        >
+          {children}
+        </main>
         <Footer />
       </div>
     </>
