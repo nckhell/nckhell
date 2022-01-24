@@ -20,7 +20,7 @@ export const Nav = () => {
             title="Nick"
             className="font-inter text-xl text-pink-500 no-underline font-bold uppercase hover:text-yellow-500"
           >
-            NCKHELL
+            <span className="logo-effect">NCKHELL</span>
           </a>
           {/* Hamburger open */}
           <button

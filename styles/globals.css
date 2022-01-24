@@ -10,6 +10,13 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.logo-effect {
+  background: url('/images/logo-effect.svg') center/140% auto no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 a {
   color: inherit;
   @apply underline;
