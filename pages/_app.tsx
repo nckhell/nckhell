@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import '../styles/tooltip.css'
 
 import type { NextComponentType } from 'next'
 import { AppContext, AppInitialProps, AppLayoutProps } from 'next/app'

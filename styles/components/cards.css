@@ -1,0 +1,14 @@
+@layer components {
+    .card-base {
+        @apply rounded-sm border p-8;
+        border-color: #002f3c;
+    }
+
+    .card-border-outlined {
+        box-shadow: 0 0 transparent, 0 0 transparent, 5px 5px 0 -1px #fff, 5px 5px 0 #002f3c;
+    }
+
+    .card-border-filled {
+        box-shadow: 5px 5px 0px #002f3c;
+    }
+}

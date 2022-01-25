@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "./components/animations.css";
+@import "./components/button.css";
+@import "./components/tooltip.css";
+@import "./components/cards.css";
+
+@import "tailwindcss/utilities";
+@import "./utilities/effects.css";
 
 html,
 body {
@@ -24,160 +31,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-mark {
-  display: inline;
-  background-color: transparent;
-  background-image: linear-gradient(
-    transparent 35%,
-    #faf77d 0,
-    #faf77d 85%,
-    transparent 0
-  );
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
-.txt-clipping {
-  padding: 0 0.5rem;
-  vertical-align: middle;
-  background-color: var(--color-sheet);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  border-radius: 0.5rem;
-}
-
-.txt-clipping--pink-teal {
-  background: linear-gradient(
-    90deg,
-    rgba(241, 187, 255, 1) 0%,
-    rgba(77, 219, 192, 1) 100%
-  );
-}
-
-.txt-clipping--subtle {
-  background: linear-gradient(90deg, #fee5da 0%, #fff5ca 100%);
-}
-
-.txt-clipping--affirmative {
-  background: linear-gradient(90deg, #b3f8eb 0%, #b6dbff 100%);
-}
-
-.sketched-hr {
-  width: 100%;
-  height: 0.4em;
-  margin: 3em 0;
-  border: 0;
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 119 6'%3E%3Cpath d='M119 3.8c-60 2.5-33.5-7-119 0' fill='none' stroke='%231d2d35' stroke-width='2'/%3E%3C/svg%3E")
-    center/5em 100% repeat-x;
-}
-
-.sketch-underline {
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='119' height='6' viewBox='0 0 119 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M117.434 3.853C59.027 5.933 84.784-2.46 1.566 3.436' stroke='%23fc0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")
-    bottom left/100% 0.5rem no-repeat;
-  padding-bottom: 0.1rem;
-}
-
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: 1; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.img-holder {
-  width: 160px;
-}
-
-.shake {
-  animation-name: spaceboots;
-  animation-duration: 5s;
-  transform-origin: 50% 50%;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@keyframes spaceboots {
-  0% {
-    transform: translate(2px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(0px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(2px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(2px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(2px, 1px) rotate(0deg);
-  }
-}
-
-@layer components {
-  .btn-base {
-    @apply text-slate-800 font-space-mono cursor-pointer inline-block bg-yellow-200 rounded border border-2 py-1 px-4 text-sm font-bold whitespace-nowrap text-center transition duration-75 ease-in;
-    border-color: #002f3c;
-  }
-  .btn-ltr {
-    box-shadow: 3px 3px 0 #002f3c;
-  }
-  .btn-ltr:hover {
-    box-shadow: 1px 1px 0 #002f3c;
-    transform: translate(2px, 2px);
-  }
-  .btn-rtl {
-    box-shadow: -3px 3px 0 #002f3c;
-  }
-  .btn-rtl:hover {
-    box-shadow: -1px 1px 0 #002f3c;
-    transform: translate(-2px, 2px);
-  }
 }

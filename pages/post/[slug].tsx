@@ -24,6 +24,7 @@ export default function PostPage({
     <div>
       <article className="prose prose-green">
         {frontMatter.title}
+        {slug}
         <MDXRemote {...mdxSource} />
       </article>
     </div>
