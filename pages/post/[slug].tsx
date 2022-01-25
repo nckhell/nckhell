@@ -5,12 +5,14 @@ import { ParsedUrlQuery } from 'querystring'
 import { ReactNode } from 'react'
 
 import { Layout } from '../../components/layout'
-import { Post } from '../../types/Post.types'
 import { getAllPosts, getPost } from '../../utils/postUtils'
 
 // props type
 type PostPageProps = {
-  frontMatter: Post
+  frontMatter: {
+    title: string
+    date: string
+  }
   mdxSource: MDXRemoteSerializeResult
   slug: string
 }
