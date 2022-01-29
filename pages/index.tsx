@@ -23,7 +23,7 @@ export default function Home({ posts }: HomePageProps) {
         className={`text-center group px-4 sm:px-8`}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-8 py-2 relative flex justify-center">
-          <div className="w-20 md:w-24">
+          <div className="w-24">
             <Image
               src={profilePic}
               alt="Nick Hellemans"
@@ -41,7 +41,7 @@ export default function Home({ posts }: HomePageProps) {
             </p>
           </Tooltip>
         </div>
-        <p className="font-hand text-2xl md:text-4xl -rotate-2 mt-3 md:mt-5 text-gray-800">
+        <p className="font-hand text-3xl md:text-4xl -rotate-2 mt-3 md:mt-5 text-gray-800">
           {`I'm Nick, `}
           <span className="txt-clipping txt-clipping--subtle">
             Software Designer
@@ -66,26 +66,27 @@ export default function Home({ posts }: HomePageProps) {
           </a>
           .
         </p>
-        <div className="max-w-6xl mx-auto px-4 pt-10 relative">
+        <div className="max-w-6xl mx-auto px-4 sm:pt-5 md:pt-10 relative">
           <hr className="sketched-hr opacity-90" />
         </div>
       </header>
-      <div className="max-w-4xl mx-auto text-center">
-        <h1 className="font-mono-space">The Blog</h1>
-        <div className="py-4 text-2xl max-w-4xl leading-relaxed font-medium">
+      <div className="max-w-4xl mx-auto text-center px-4 sm:px-8">
+        <h1 className="font-mono-space text-4xl md:text-5xl">The Blog</h1>
+        <div className="py-4 md:py-6 lg:py-8 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-medium">
           <p>
             I&apos;m <i>continiously learning</i> and like to write stuff about
             building digital products, product management, and life.
           </p>
         </div>
         <div className="pt-6 max-w-3xl mx-auto">
-          {posts.map((post) => (
+          {posts.map((post, index, arr) => (
             <div key={post.slug} className="mb-6">
               <BlogPostPreviewCard
                 title={post.frontMatter.title}
                 date={post.frontMatter.date}
                 preview={post.frontMatter.preview}
                 slug={post.slug}
+                number={arr.length - arr.indexOf(post)}
               />
             </div>
           ))}

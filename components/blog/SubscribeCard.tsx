@@ -47,11 +47,11 @@ export const SubscribeCard = () => {
       <Card color={`${isSubscribed ? 'emerald' : 'amber'}`}>
         {!isSubscribed && !error && (
           <div className="text-center">
-            <div className="text-gray-800 font-medium">
-              Subscribe to get notified about new future posts
+            <div className="text-gray-800 font-medium text-lg">
+              Subscribe to get notified about future posts
             </div>
             <form className="inline-flex items-center mt-4">
-              <div className="w-64">
+              <div className="w-72">
                 <Input
                   id="email"
                   type="email"
@@ -60,7 +60,7 @@ export const SubscribeCard = () => {
                   onChange={onEmailChange}
                 />
               </div>
-              <div className="ml-2 relative -top-0.5">
+              <div className="ml-2">
                 <Button label="Subscribe" onClick={onSubscribe} color="blue" />
               </div>
             </form>
@@ -68,7 +68,7 @@ export const SubscribeCard = () => {
         )}
         {isSubscribed && (
           <div className="text-center">
-            <h3>Thank you!</h3>
+            <h3>🎉 Thank you!</h3>
             <p className="mt-2 text-lg">
               You are succesfully subscribed and will receive an email when
               there are new posts.

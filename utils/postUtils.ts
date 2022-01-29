@@ -48,5 +48,14 @@ export const getAllPosts = () => {
     }
   })
 
-  return posts
+  // Most recent one first in the array
+  const sortedPosts = posts.sort((a, b) =>
+    a.frontMatter.date > b.frontMatter.date
+      ? -1
+      : b.frontMatter.date > a.frontMatter.date
+      ? 1
+      : 0
+  )
+
+  return sortedPosts
 }

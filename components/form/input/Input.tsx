@@ -1,6 +1,5 @@
 import { InputSizeType, InputTypeType } from './input.types'
 import {
-  baseStyles,
   DEFAULT_INPUT_SIZE,
   disabledStyles,
   errorDetailsStyles,
@@ -51,7 +50,7 @@ export const Input = ({
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value.toString())}
         disabled={disabled}
-        className={`${baseStyles} ${inputSizesStyles[size]} ${
+        className={`input-base ${inputSizesStyles[size]} ${
           disabled && disabledStyles
         } ${errorMessage && inputHasErrorStyles}`}
       />

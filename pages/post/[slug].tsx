@@ -28,13 +28,13 @@ export default function PostPage({
 }: PostPageProps) {
   return (
     <>
-      <article className="max-w-3xl mx-auto">
+      <article className="max-w-4xl mx-auto px-4 sm:px-8">
         <div className="text-center">
-          <div className="text-gray-700 text-lg">
+          <div className="text-gray-700 md:text-lg">
             {format(new Date(frontMatter.date), 'MMMM do, y')}
           </div>
-          <h2 className="mt-2">{frontMatter.title}</h2>
-          <div className="markdown-content mt-6 text-left">
+          <h2 className="mt-2 text-3xl md:text-4xl">{frontMatter.title}</h2>
+          <div className="markdown-content mt-6 text-left text-lg">
             <MDXRemote {...mdxSource} />
           </div>
         </div>
@@ -42,13 +42,13 @@ export default function PostPage({
           <hr className="sketched-hr opacity-90" />
         </div>
         <div className="text-center">
-          <h3 className="font-space-mono mb-8 inline-block text-gray-800 leading-relaxed txt-clipping txt-clipping--affirmative">
+          <h3 className="text-2xl md:text-3xl font-space-mono mb-8 inline-block text-gray-800 leading-relaxed txt-clipping txt-clipping--affirmative">
             Comments 📣
           </h3>
           <Comments slug={slug} title={frontMatter.title} />
         </div>
       </article>
-      <div className="max-w-xl mx-auto mt-16 mb-10">
+      <div className="max-w-xl mx-auto mt-16 mb-10 px-4 sm:px-8">
         <SubscribeCard />
       </div>
     </>
