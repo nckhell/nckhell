@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useContext } from 'react'
 
 import { menu } from '../../../../content/menu'
@@ -15,13 +16,14 @@ export const Nav = () => {
     <>
       <nav className="w-full px-4 sm:px-8 border-b border-gray-200">
         <div className="flex items-center justify-between mx-auto">
-          <a
-            href="#/"
-            title="Nick"
-            className="font-inter text-xl text-pink-500 no-underline font-bold uppercase hover:text-yellow-500"
-          >
-            <span className="logo-effect">NCKHELL</span>
-          </a>
+          <Link href="/">
+            <a
+              title="Nick"
+              className="font-inter text-xl text-pink-500 no-underline font-bold uppercase hover:text-yellow-500"
+            >
+              <span className="logo-effect">NCKHELL</span>
+            </a>
+          </Link>
           {/* Hamburger open */}
           <button
             type="button"

@@ -5,6 +5,7 @@
 @import "./components/button.css";
 @import "./components/tooltip.css";
 @import "./components/cards.css";
+@import "./components/typography.css";
 
 @import "tailwindcss/utilities";
 @import "./utilities/effects.css";

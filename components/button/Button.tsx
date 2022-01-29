@@ -4,6 +4,7 @@ import {
   ButtonColorType,
   ButtonShadowDirectionType,
   ButtonSizeType,
+  ButtonType
 } from './button.types'
 import {
   buttonColors,
@@ -20,6 +21,7 @@ interface ButtonProps {
   children?: ReactNode
   shadowDirection?: ButtonShadowDirectionType
   disabled?: boolean
+  type?: ButtonType
   onClick: () => void
 }
 
@@ -29,13 +31,14 @@ export const Button = ({
   size = DEFAULT_BUTTON_SIZE,
   onClick,
   children,
+  type = 'button',
   disabled = false,
   shadowDirection = DEFAULT_SHADOW_DIRECTION,
 }: ButtonProps) => {
   const shadowClasses = shadowDirection === 'ltr' ? 'btn-ltr' : 'btn-rtl'
   return (
     <button
-      type="button"
+      type={type}
       className={`btn-base ${shadowClasses} ${buttonSizes[size]} ${buttonColors[color]}`}
       onClick={onClick}
       disabled={disabled}

@@ -9,15 +9,11 @@ export const menu: MenuItemType[] = [
     url: '/',
   },
   {
-    text: 'Blog',
-    url: '/blog',
-  },
-  {
     text: 'Who Am I',
     url: '/who-am-i',
   },
   {
-    text: 'Resources',
-    url: '/resources',
-  },
+    text: 'Blog',
+    url: '/blog',
+  }
 ]

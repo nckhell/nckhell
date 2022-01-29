@@ -1,9 +1,12 @@
+import { format } from 'date-fns'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { ParsedUrlQuery } from 'querystring'
 import { ReactNode } from 'react'
 
+import { SubscribeCard } from '../../components/blog/SubscribeCard'
+import { Comments } from '../../components/comments'
 import { Layout } from '../../components/layout'
 import { getAllPosts, getPost } from '../../utils/postUtils'
 
@@ -12,6 +15,7 @@ type PostPageProps = {
   frontMatter: {
     title: string
     date: string
+    preview: string
   }
   mdxSource: MDXRemoteSerializeResult
   slug: string
@@ -23,13 +27,31 @@ export default function PostPage({
   slug,
 }: PostPageProps) {
   return (
-    <div>
-      <article className="prose prose-green">
-        {frontMatter.title}
-        {slug}
-        <MDXRemote {...mdxSource} />
+    <>
+      <article className="max-w-3xl mx-auto">
+        <div className="text-center">
+          <div className="text-gray-700 text-lg">
+            {format(new Date(frontMatter.date), 'MMMM do, y')}
+          </div>
+          <h2 className="mt-2">{frontMatter.title}</h2>
+          <div className="markdown-content mt-6 text-left">
+            <MDXRemote {...mdxSource} />
+          </div>
+        </div>
+        <div className="relative">
+          <hr className="sketched-hr opacity-90" />
+        </div>
+        <div className="text-center">
+          <h3 className="font-space-mono mb-8 inline-block text-gray-800 leading-relaxed txt-clipping txt-clipping--affirmative">
+            Comments 📣
+          </h3>
+          <Comments slug={slug} title={frontMatter.title} />
+        </div>
       </article>
-    </div>
+      <div className="max-w-xl mx-auto mt-16 mb-10">
+        <SubscribeCard />
+      </div>
+    </>
   )
 }
 

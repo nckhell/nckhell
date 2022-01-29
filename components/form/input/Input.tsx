@@ -18,7 +18,7 @@ interface ButtonProps {
   type: InputTypeType
   size?: InputSizeType
   disabled?: boolean
-  onChange: () => void
+  onChange: (newValue: string) => void
   errorMessage?: string
 }
 
@@ -34,7 +34,7 @@ export const Input = ({
   errorMessage,
 }: ButtonProps) => {
   return (
-    <div>
+    <div className='text-left'>
       {label && (
         <label
           htmlFor={id}
@@ -49,7 +49,7 @@ export const Input = ({
         name={id}
         value={value}
         placeholder={placeholder}
-        onChange={onChange}
+        onChange={(e) => onChange(e.target.value.toString())}
         disabled={disabled}
         className={`${baseStyles} ${inputSizesStyles[size]} ${
           disabled && disabledStyles

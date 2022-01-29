@@ -9,3 +9,4 @@ export type ButtonColorType =
   | 'lime'
   | 'slate'
 export type ButtonShadowDirectionType = 'ltr' | 'rtl'
+export type ButtonType = 'button' | 'submit'
