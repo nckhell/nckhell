@@ -50,8 +50,8 @@ export const SubscribeCard = () => {
             <div className="text-gray-800 font-medium text-lg">
               Subscribe to get notified about future posts
             </div>
-            <form className="inline-flex items-center mt-4">
-              <div className="w-72">
+            <form className="md:inline-flex md:items-center mt-4">
+              <div className="md:w-72">
                 <Input
                   id="email"
                   type="email"
@@ -60,7 +60,7 @@ export const SubscribeCard = () => {
                   onChange={onEmailChange}
                 />
               </div>
-              <div className="ml-2">
+              <div className="mt-4 md:mt-0 ml-2">
                 <Button label="Subscribe" onClick={onSubscribe} color="blue" />
               </div>
             </form>
