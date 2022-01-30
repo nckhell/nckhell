@@ -12,15 +12,21 @@ interface CardProps {
   children: ReactNode
   color?: CardColorType
   border?: CardBorderType
+  stretch?: boolean
 }
 
 export const Card = ({
   children,
   color = DEFAULT_CARD_COLOR,
   border = DEFAULT_CARD_BORDER,
+  stretch = false,
 }: CardProps) => {
   return (
-    <div className={`card-base ${cardColors[color]} ${cardBorders[border]}`}>
+    <div
+      className={`card-base ${cardColors[color]} ${cardBorders[border]} ${
+        stretch ? 'min-h-full' : ''
+      }`}
+    >
       {children}
     </div>
   )

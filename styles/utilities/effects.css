@@ -44,3 +44,23 @@ mark {
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='119' height='6' viewBox='0 0 119 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M117.434 3.853C59.027 5.933 84.784-2.46 1.566 3.436' stroke='%23fc0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") bottom left/100% 0.5rem no-repeat;
     padding-bottom: 0.1rem;
 }
+
+.wave-bg-amber {
+    background-color: #fffbeb;
+    background: url('/images/wave-bottom.svg') center bottom -0.1rem/105% no-repeat, #fffbeb url('/images/wave-top.svg') center top -0.1rem/105% no-repeat;
+}
+
+.wave-bg-lime {
+    background-color: #f7fee7;
+    background: url('/images/wave-bottom.svg') center bottom -0.1rem/105% no-repeat, #f7fee7 url('/images/wave-top.svg') center top -0.1rem/105% no-repeat;
+}
+
+.wave-bg-emerald {
+    background-color: #d1fae5;
+    background: url('/images/wave-bottom.svg') center bottom -0.1rem/105% no-repeat, #d1fae5 url('/images/wave-top.svg') center top -0.1rem/105% no-repeat;
+}
+
+.wave-bg-gray {
+    background-color: #111827;
+    background: url('/images/wave-bottom.svg') center bottom -0.1rem/105% no-repeat, #111827 url('/images/wave-top.svg') center top -0.1rem/105% no-repeat;
+}

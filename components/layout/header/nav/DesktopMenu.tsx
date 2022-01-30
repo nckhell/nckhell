@@ -2,7 +2,7 @@ import type { MenuItemType } from '../../../../content/menu'
 import { Tooltip } from '../../../tooltip'
 
 const navStyles =
-  'text-base font-bold inline-block h-20 px-6 hover:text-pink-500'
+  'text-base font-bold inline-block h-20 px-8 hover:text-pink-500'
 
 interface DesktopMenuProps {
   menu: MenuItemType[]
@@ -14,7 +14,7 @@ export const DesktopMenu = ({ menu }: DesktopMenuProps) => {
       {menu.map((menuItem, index) => (
         <li key={index}>
           <a href={menuItem.url} title={menuItem.text} className={navStyles}>
-            <span className="md:flex md:h-full items-center group-hover:text-pink">
+            <span className="text-lg md:flex md:h-full items-center group-hover:text-pink">
               {menuItem.text}
             </span>
           </a>

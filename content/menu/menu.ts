@@ -9,8 +9,8 @@ export const menu: MenuItemType[] = [
     url: '/',
   },
   {
-    text: 'Who Am I',
-    url: '/who-am-i',
+    text: 'About',
+    url: '/about',
   },
   {
     text: 'Blog',

@@ -19,7 +19,7 @@ export const Nav = () => {
           <Link href="/">
             <a
               title="Nick"
-              className="font-inter text-xl text-pink-500 no-underline font-bold uppercase hover:text-yellow-500"
+              className="font-inter text-xl md:text-2xl text-pink-500 no-underline font-bold uppercase hover:text-yellow-500"
             >
               <span className="logo-effect">NCKHELL</span>
             </a>
