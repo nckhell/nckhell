@@ -8,6 +8,7 @@ import { ReactNode } from 'react'
 import { SubscribeCard } from '../../components/blog/SubscribeCard'
 import { Comments } from '../../components/comments'
 import { Layout } from '../../components/layout'
+import { SEO } from '../../components/seo'
 import { getAllPosts, getPost } from '../../utils/postUtils'
 
 // props type
@@ -28,13 +29,18 @@ export default function PostPage({
 }: PostPageProps) {
   return (
     <>
+      <SEO
+        title={frontMatter.title}
+        description={frontMatter.preview}
+        url={`/post/${slug}`}
+      />
       <article className="max-w-4xl mx-auto px-4 sm:px-8">
         <div className="text-center">
           <div className="text-gray-700 md:text-lg">
             {format(new Date(frontMatter.date), 'MMMM do, y')}
           </div>
           <h2 className="mt-2 text-3xl md:text-4xl">{frontMatter.title}</h2>
-          <div className="markdown-content mt-6 text-left text-lg">
+          <div className="markdown-content mt-6 md:mt-10 text-left text-lg">
             <MDXRemote {...mdxSource} />
           </div>
         </div>

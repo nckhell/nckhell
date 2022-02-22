@@ -4,8 +4,8 @@ import { ReactNode } from 'react'
 import { Button } from '../components/button'
 import { Card } from '../components/card'
 import { Layout } from '../components/layout'
+import { SEO } from '../components/seo'
 import github from '../public/images/github.svg'
-import instagram from '../public/images/instagram.svg'
 import linkedIn from '../public/images/linkedin.svg'
 import profilePic from '../public/images/nick.jpeg'
 import { getAge } from '../utils/getAge'
@@ -13,6 +13,7 @@ import { getAge } from '../utils/getAge'
 export default function Blog() {
   return (
     <>
+      <SEO title="About" url="/about" />
       <div className="max-w-5xl mx-auto text-center px-4 sm:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center text-left">
@@ -69,12 +70,12 @@ export default function Blog() {
             >
               Awell Health
             </a>
-            . To be able to combine both of my passions in my professional
+            . Being able to combine both of my passions in my professional
             carreer is what drives me every day.
           </p>
         </div>
         <div className="flex items-center gap-6 mt-4">
-          <div className="">
+          <div>
             <a
               href="https://www.linkedin.com/in/nckhell/"
               target="_blank"
@@ -88,7 +89,7 @@ export default function Blog() {
               />
             </a>
           </div>
-          <div className="">
+          <div>
             <a
               href="https://github.com/nckhell/"
               target="_blank"
@@ -96,20 +97,6 @@ export default function Blog() {
               rel="noreferrer"
             >
               <Image src={github} alt="Nick Hellemans on Github" width="32" />
-            </a>
-          </div>
-          <div className="">
-            <a
-              href="https://www.instagram.com/nckhell/"
-              target="_blank"
-              title="Instagram"
-              rel="noreferrer"
-            >
-              <Image
-                src={instagram}
-                alt="Nick Hellemans on Instagram"
-                width="32"
-              />
             </a>
           </div>
           <div className="relative -top-1">

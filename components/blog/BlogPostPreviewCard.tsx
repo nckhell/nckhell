@@ -1,4 +1,5 @@
 import { format } from 'date-fns'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Button } from '../button'
@@ -17,7 +18,7 @@ export const BlogPostPreviewCard = ({
   title,
   preview,
   slug,
-  number
+  number,
 }: BlogPostPreviewCardProps) => {
   const router = useRouter()
 
@@ -27,9 +28,15 @@ export const BlogPostPreviewCard = ({
         <div className="text-gray-700 mb-1">
           {format(new Date(date), 'MMMM do, y')}
         </div>
-        <h3>{number}. {title}</h3>
+        <h3>
+          <Link href={`/post/${slug}`}>
+            <a title={title} className='no-underline'>
+              {number}. {title}
+            </a>
+          </Link>
+        </h3>
         <p className="text-left mt-4 text-lg">{preview}</p>
-        <div className="mt-2">
+        <div className="mt-2 md:mt-4">
           <Button
             label="Read more"
             onClick={() => router.push(`/post/${slug}`)}

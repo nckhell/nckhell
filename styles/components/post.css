@@ -1,0 +1,11 @@
+.markdown-content p {
+    @apply mb-6 text-xl leading-relaxed text-gray-900;
+}
+
+.markdown-content a {
+    @apply text-blue-700
+}
+
+.markdown-content a:hover {
+    @apply no-underline
+}

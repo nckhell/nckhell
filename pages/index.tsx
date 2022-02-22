@@ -6,6 +6,7 @@ import { ReactNode } from 'react'
 import { BlogPostPreviewCard, SubscribeCard } from '../components/blog'
 import { Button } from '../components/button'
 import { Layout } from '../components/layout'
+import { SEO } from '../components/seo'
 import { Tooltip } from '../components/tooltip'
 import profilePic from '../public/images/nick.jpeg'
 import { Post } from '../types/Post.types'
@@ -19,9 +20,8 @@ export default function Home({ posts }: HomePageProps) {
 
   return (
     <>
-      <header
-        className={`text-center group px-4 sm:px-8`}
-      >
+      <SEO title="Aloha" />
+      <header className={`text-center group px-4 sm:px-8`}>
         <div className="max-w-6xl mx-auto px-4 sm:px-8 py-2 relative flex justify-center">
           <div className="w-24">
             <Image
