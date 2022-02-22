@@ -34,20 +34,20 @@ export default function Blog() {
         </div>
         <div className="text-left mt-8 text-xl text-gray-700 leading-relaxed">
           <p>
-            I&apos;m a {getAge('1993-11-30')} year old{' '}
+            I&apos;m a {getAge('1993-11-30')}-year-old{' '}
             <span className="txt-clipping txt-clipping--affirmative font-bold">
               Software Designer, Developer, and Physiotherapist
             </span>
             . I started designing and coding my first websites back in 2008 as a
-            young teenager. It was that time where you designed your websites in
+            young teenager. It was that time when you designed your websites in
             Photoshop and used tables for everything (no flexbox, no grids 🤯).
           </p>
           <p className="mt-4">
-            Besides technology I always had a passion for the{' '}
+            Besides technology, I always had a passion for the{' '}
             <span className="txt-clipping txt-clipping--affirmative font-bold">
               human body
             </span>{' '}
-            so after graduating as software engineer I decided to chase that
+            so after graduating as a software engineer I decided to chase that
             dream and 5 years later I graduated as a{' '}
             <span className="txt-clipping txt-clipping--affirmative font-bold">
               Physiotherapist
@@ -56,7 +56,7 @@ export default function Blog() {
           </p>
           <p className="mt-4">
             Nowadays I&apos;m bringing my technical and clinical background
-            together as{' '}
+            together as a{' '}
             <span className="txt-clipping txt-clipping--affirmative font-bold">
               Product Manager
             </span>{' '}
@@ -71,7 +71,7 @@ export default function Blog() {
               Awell Health
             </a>
             . Being able to combine both of my passions in my professional
-            carreer is what drives me every day.
+            career is what drives me every day.
           </p>
         </div>
         <div className="flex items-center gap-6 mt-4">
