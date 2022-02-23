@@ -8,6 +8,7 @@ interface SeoProps {
   description?: string
   url?: string
   siteName?: string
+  imageUrl?: string
 }
 
 export const SEO = ({
@@ -15,6 +16,7 @@ export const SEO = ({
   description = SeoSettings.description,
   url = SeoSettings.rootUrl,
   siteName = SeoSettings.title,
+  imageUrl = ''
 }: SeoProps) => {
   return (
     <Head>
@@ -24,6 +26,7 @@ export const SEO = ({
       <meta property="og:site_name" content={siteName} key="ogsitename" />
       <meta property="og:title" content={title} key="ogtitle" />
       <meta property="og:description" content={description} key="ogdesc" />
+      <meta property="og:image" content={imageUrl} key="ogimage" />
     </Head>
   )
 }

@@ -17,6 +17,7 @@ type PostPageProps = {
     title: string
     date: string
     preview: string
+    imageUrl: string
   }
   mdxSource: MDXRemoteSerializeResult
   slug: string
@@ -33,6 +34,7 @@ export default function PostPage({
         title={frontMatter.title}
         description={frontMatter.preview}
         url={`/post/${slug}`}
+        imageUrl={frontMatter.imageUrl}
       />
       <article className="max-w-4xl mx-auto px-4 sm:px-8">
         <div className="text-center">
