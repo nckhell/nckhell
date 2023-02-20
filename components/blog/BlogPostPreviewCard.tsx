@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 
 import { Button } from '../button'
 import { Card } from '../card'
+import { LabelBadges } from '../labelBadges'
 
 interface BlogPostPreviewCardProps {
   date: string
@@ -11,6 +12,7 @@ interface BlogPostPreviewCardProps {
   preview: string
   slug: string
   number: number
+  labels?: string
 }
 
 export const BlogPostPreviewCard = ({
@@ -19,6 +21,7 @@ export const BlogPostPreviewCard = ({
   preview,
   slug,
   number,
+  labels = '',
 }: BlogPostPreviewCardProps) => {
   const router = useRouter()
 
@@ -30,11 +33,14 @@ export const BlogPostPreviewCard = ({
         </div>
         <h3>
           <Link href={`/post/${slug}`}>
-            <a title={title} className='no-underline'>
+            <a title={title} className="no-underline">
               {number}. {title}
             </a>
           </Link>
         </h3>
+        <div className="mt-2">
+          <LabelBadges labels={labels} />
+        </div>
         <p className="text-left mt-4 text-lg">{preview}</p>
         <div className="mt-2 md:mt-4">
           <Button

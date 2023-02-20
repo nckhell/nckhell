@@ -1,16 +1,17 @@
-@import "tailwindcss/base";
+@import 'tailwindcss/base';
 
-@import "tailwindcss/components";
-@import "./components/animations.css";
-@import "./components/button.css";
-@import "./components/tooltip.css";
-@import "./components/cards.css";
-@import "./components/typography.css";
-@import "./components/form.css";
-@import "./components/post.css";
+@import 'tailwindcss/components';
+@import './components/animations.css';
+@import './components/button.css';
+@import './components/tooltip.css';
+@import './components/cards.css';
+@import './components/typography.css';
+@import './components/form.css';
+@import './components/post.css';
+@import './components/label.css';
 
-@import "tailwindcss/utilities";
-@import "./utilities/effects.css";
+@import 'tailwindcss/utilities';
+@import './utilities/effects.css';
 
 html,
 body {

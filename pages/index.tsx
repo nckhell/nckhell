@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { ReactNode } from 'react'
 
-import { BlogPostPreviewCard, SubscribeCard } from '../components/blog'
+import { BlogPostPreviewCard } from '../components/blog'
 import { Button } from '../components/button'
 import { Layout } from '../components/layout'
 import { SEO } from '../components/seo'
@@ -84,6 +84,7 @@ export default function Home({ posts }: HomePageProps) {
                 title={post.frontMatter.title}
                 date={post.frontMatter.date}
                 preview={post.frontMatter.preview}
+                labels={post.frontMatter.labels}
                 slug={post.slug}
                 number={arr.length - arr.indexOf(post)}
               />
@@ -98,9 +99,9 @@ export default function Home({ posts }: HomePageProps) {
             color="slate"
           />
         </div>
-        <div className="max-w-xl mx-auto mt-16 mb-10">
+        {/* <div className="max-w-xl mx-auto mt-16 mb-10">
           <SubscribeCard />
-        </div>
+        </div> */}
       </div>
     </>
   )

@@ -1,7 +1,7 @@
 import type { GetStaticProps } from 'next'
 import { ReactNode } from 'react'
 
-import { BlogPostPreviewCard, SubscribeCard } from '../components/blog'
+import { BlogPostPreviewCard } from '../components/blog'
 import { Layout } from '../components/layout'
 import { SEO } from '../components/seo'
 import { Post } from '../types/Post.types'
@@ -24,9 +24,9 @@ export default function Blog({ posts }: BlogPageProps) {
             As a bonus, I hope they are interesting for you too.
           </p>
         </div>
-        <div className="max-w-xl mx-auto my-10">
+        {/* <div className="max-w-xl mx-auto my-10">
           <SubscribeCard />
-        </div>
+        </div> */}
         <div className="pt-6 max-w-3xl mx-auto">
           {posts.map((post, index, arr) => (
             <div key={post.slug} className="mb-6">
@@ -34,6 +34,7 @@ export default function Blog({ posts }: BlogPageProps) {
                 title={post.frontMatter.title}
                 date={post.frontMatter.date}
                 preview={post.frontMatter.preview}
+                labels={post.frontMatter.labels}
                 slug={post.slug}
                 number={arr.length - arr.indexOf(post)}
               />

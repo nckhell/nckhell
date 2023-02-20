@@ -24,32 +24,44 @@ export const Footer = ({ children }: FooterProps) => {
       </h3>
       {children}
       <div className="mt-2 text-slate-800 text-sm leading-5">
-        <p>
+        <div>
           Website built by{' '}
-          <Tooltip text="Me, myself, and I">
+          <Tooltip text="Me, myself, and I" direction="top">
             <span className="cursor-pointer">🙋‍♂️</span>
+          </Tooltip>
+          . &#169; Until forever and ever.
+        </div>
+        <div>
+          <Tooltip text="Inspiration from" direction="top">
+            <span className="cursor-pointer">👀</span>
           </Tooltip>{' '}
-          with{' '}
           <a
-            href="https://nextjs.org/"
-            title="NextJS"
+            href="https://basecamp.com/"
+            title="Basecamp"
             target="_blank"
             rel="noreferrer"
           >
-            NextJS
-          </a>{' '}
-          and{' '}
+            Basecamp
+          </a>
+          ,{' '}
           <a
-            href="https://tailwindcss.com/"
+            href="https://statamic.com/"
             title="Tailwind"
             target="_blank"
             rel="noreferrer"
           >
-            Tailwind
+            Statamic
           </a>
-          .
-        </p>
-        <p>&#169; Until forever and ever.</p>
+          ,{' '}
+          <a
+            href="https://hey.com/"
+            title="HEY"
+            target="_blank"
+            rel="noreferrer"
+          >
+            HEY
+          </a>
+        </div>
       </div>
     </footer>
   )

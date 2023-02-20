@@ -3,6 +3,7 @@ export interface Post {
     title: string
     date: string
     preview: string
+    labels: string
   }
   slug: string
 }

@@ -1,0 +1,7 @@
+@layer components {
+  .label {
+    @apply text-slate-800 font-inter inline-block bg-slate-100 rounded border border py-1 px-3 text-xs font-normal whitespace-nowrap text-center;
+    border-color: #002f3c;
+    box-shadow: 1px 1px 0 #002f3c;
+  }
+}

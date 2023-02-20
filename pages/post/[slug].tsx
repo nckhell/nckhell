@@ -5,8 +5,8 @@ import { serialize } from 'next-mdx-remote/serialize'
 import { ParsedUrlQuery } from 'querystring'
 import { ReactNode } from 'react'
 
-import { SubscribeCard } from '../../components/blog/SubscribeCard'
 import { Comments } from '../../components/comments'
+import { LabelBadges } from '../../components/labelBadges'
 import { Layout } from '../../components/layout'
 import { SEO } from '../../components/seo'
 import { getAllPosts, getPost } from '../../utils/postUtils'
@@ -18,6 +18,7 @@ type PostPageProps = {
     date: string
     preview: string
     imageUrl: string
+    labels: string
   }
   mdxSource: MDXRemoteSerializeResult
   slug: string
@@ -36,12 +37,15 @@ export default function PostPage({
         url={`/post/${slug}`}
         imageUrl={frontMatter.imageUrl}
       />
-      <article className="max-w-4xl mx-auto px-4 sm:px-8">
+      <article className="max-w-4xl mx-auto px-6 sm:px-8">
         <div className="text-center">
           <div className="text-gray-700 md:text-lg">
             {format(new Date(frontMatter.date), 'MMMM do, y')}
           </div>
           <h2 className="mt-2 text-3xl md:text-4xl">{frontMatter.title}</h2>
+          <div className="mt-2">
+            <LabelBadges labels={frontMatter.labels} />
+          </div>
           <div className="markdown-content mt-6 md:mt-10 text-left text-lg">
             <MDXRemote {...mdxSource} />
           </div>
@@ -56,9 +60,9 @@ export default function PostPage({
           <Comments slug={slug} title={frontMatter.title} />
         </div>
       </article>
-      <div className="max-w-xl mx-auto mt-16 mb-10 px-4 sm:px-8">
+      {/* <div className="max-w-xl mx-auto mt-16 mb-10 px-4 sm:px-8">
         <SubscribeCard />
-      </div>
+      </div> */}
     </>
   )
 }
