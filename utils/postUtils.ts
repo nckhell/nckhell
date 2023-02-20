@@ -57,5 +57,5 @@ export const getAllPosts = () => {
       : 0
   )
 
-  return sortedPosts
+  return sortedPosts.filter((post) => post.frontMatter.wip !== true)
 }

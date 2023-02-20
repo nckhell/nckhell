@@ -4,6 +4,7 @@ export interface Post {
     date: string
     preview: string
     labels: string
+    wip: 'true' | 'false'
   }
   slug: string
 }
