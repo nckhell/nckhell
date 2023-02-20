@@ -44,17 +44,15 @@ export default function Home({ posts }: HomePageProps) {
         <p className="font-hand text-3xl md:text-4xl -rotate-2 mt-3 md:mt-5 text-gray-800">
           {`I'm Nick, `}
           <span className="txt-clipping txt-clipping--subtle">
-            Software Designer
+            Product Developer
           </span>
-          , <span className="txt-clipping txt-clipping--subtle">Developer</span>
-          , and{' '}
-          <span className="txt-clipping txt-clipping--subtle">
-            Physiotherapist
-          </span>{' '}
+          , <span className="txt-clipping txt-clipping--subtle">Builder</span>,
+          and{' '}
+          <span className="txt-clipping txt-clipping--subtle">Engineer</span>{' '}
           from 🇧🇪.
           <br />
           <span className="text-3xl md:text-5xl">C</span>urrently{' '}
-          <span className="sketch-underline">Product Manager</span> at{' '}
+          <span className="sketch-underline">Head of Product</span> at{' '}
           <a
             href="https://awell.health"
             rel="noreferrer"
@@ -74,8 +72,9 @@ export default function Home({ posts }: HomePageProps) {
         <h1 className="font-mono-space text-4xl md:text-5xl">The Blog</h1>
         <div className="py-4 md:py-6 lg:py-8 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-medium">
           <p>
-            I&apos;m <i>continiously learning</i> and like to write stuff about
-            building digital products, product management, and life.
+            Learning-by-doing and <i>doing-by-learning</i>. I write down my
+            learnings, insights, and mistakes as a future reference for myself.
+            As a bonus, I hope they are interesting for you too.
           </p>
         </div>
         <div className="pt-6 max-w-3xl mx-auto">

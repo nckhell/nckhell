@@ -7,5 +7,5 @@ interface SEO {
 export const SEO: SEO = {
   rootUrl: 'https://nckhell.com',
   title: 'Nick Hellemans | nckhell',
-  description: `I'm Nick, Software Designer, Developer, and Physiotherapist from 🇧🇪. Currently Product Manager at Awell Health.`,
+  description: `I'm Nick, Product Developer, Builder, and Engineer from 🇧🇪. Currently Head of Product at Awell Health.`,
 }

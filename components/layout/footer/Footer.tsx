@@ -47,37 +47,9 @@ export const Footer = ({ children }: FooterProps) => {
           >
             Tailwind
           </a>
-          . &#169; Until forever and ever.
+          .
         </p>
-        <p>
-          👀{' '}
-          <a
-            href="https://basecamp.com/"
-            title="Basecamp"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Basecamp
-          </a>
-          ,{' '}
-          <a
-            href="https://statamic.com/"
-            title="Tailwind"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Statamic
-          </a>
-          ,{' '}
-          <a
-            href="https://hey.com/"
-            title="HEY"
-            target="_blank"
-            rel="noreferrer"
-          >
-            HEY
-          </a>
-        </p>
+        <p>&#169; Until forever and ever.</p>
       </div>
     </footer>
   )

@@ -19,8 +19,9 @@ export default function Blog({ posts }: BlogPageProps) {
         <h1 className="font-mono-space text-4xl md:text-5xl">The Blog</h1>
         <div className="pt-4 md:pt-6 lg:pt-8 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-medium">
           <p>
-            I&apos;m <i>continiously learning</i> and like to write stuff about
-            building digital products, product management, and life.
+            Learning-by-doing and <i>doing-by-learning</i>. I write down my
+            learnings, insights, and mistakes as a future reference for myself.
+            As a bonus, I hope they are interesting for you too.
           </p>
         </div>
         <div className="max-w-xl mx-auto my-10">

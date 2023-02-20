@@ -27,7 +27,7 @@ export default function Blog() {
             <div className="ml-6">
               <h3 className="font-mono-space">Nick Hellemans</h3>
               <p className="text-gray-500 text-lg">
-                Product Manager based in Antwerp, Belgium
+                Product Enthusiast based in Antwerp, Belgium
               </p>
             </div>
           </div>
@@ -36,11 +36,11 @@ export default function Blog() {
           <p>
             I&apos;m a {getAge('1993-11-30')}-year-old{' '}
             <span className="txt-clipping txt-clipping--affirmative font-bold">
-              Software Designer, Developer, and Physiotherapist
+              Product Developer, Builder, and Engineer
             </span>
             . I started designing and coding my first websites back in 2008 as a
-            young teenager. It was that time when you designed your websites in
-            Photoshop and used tables for everything (no flexbox, no grids 🤯).
+            young teenager and since never stopped building stuff with
+            technology.
           </p>
           <p className="mt-4">
             Besides technology, I always had a passion for the{' '}
@@ -55,23 +55,19 @@ export default function Blog() {
             .
           </p>
           <p className="mt-4">
-            Nowadays I&apos;m bringing my technical and clinical background
-            together as a{' '}
+            I have a strong analytical, technical, design, and clinical
+            skillset. I love solving problems and can execute at high speed with
+            great quality. I am hands-on type a guy and will not hesitate to get
+            my hands dirty writing code or to create some designs and prototypes
+            in Figma.
+          </p>
+          <p className="mt-4">
+            Currently{' '}
             <span className="txt-clipping txt-clipping--affirmative font-bold">
-              Product Manager
+              Head of Product
             </span>{' '}
-            at{' '}
-            <a
-              href="https://awell.health"
-              rel="noreferrer"
-              target="_blank"
-              title="Awell Health"
-              className="text-blue-700 hover:text-blue-800 no-underline"
-            >
-              Awell Health
-            </a>
-            . Being able to combine both of my passions in my professional
-            career is what drives me every day.
+            at Awell Health. Working with an amazing team to build the future of
+            healthcare.
           </p>
         </div>
         <div className="flex items-center gap-6 mt-4">
@@ -101,9 +97,9 @@ export default function Blog() {
           </div>
           <div className="relative -top-1">
             <a
-              href="mailto:hey@nckhell.com"
+              href="mailto:nickhellemans93@gmail.com"
               target="_blank"
-              title="hey@nckhell.com"
+              title="nickhellemans93@gmail.com"
               rel="noreferrer"
             >
               <Button size="sm" label="Email me" onClick={() => null} />
@@ -122,12 +118,12 @@ export default function Blog() {
               <Card color="lime" border="filled" stretch={true}>
                 <div className="text-left">
                   <h4 className="text-xl md:text-2xl font-space-mono font-bold">
-                    I make stuff happen <span className="text-3xl">🏎️</span>
+                    Bias Towards Action <span className="text-3xl">⚡</span>
                   </h4>
                   <p className="text-lg mt-4">
-                    Bias towards action. I take meaningful actions to drive
-                    ideas and projects forward. I can execute at speed and with
-                    quality.
+                    I make stuff happen and can execute at high speed with great
+                    quality. I am always taking meaningful actions to drive
+                    ideas and projects forward.
                   </p>
                 </div>
               </Card>
@@ -139,9 +135,10 @@ export default function Blog() {
                     Thinker & Creator <span className="text-3xl">🥸</span>
                   </h4>
                   <p className="text-lg mt-4">
-                    Solving problems end-2-end is what I love to do. From
-                    understanding the problem and defining a solution to
-                    ideation, implementation, and testing.
+                    I like to solve problems. From discovery to ideation to
+                    implementation and testing. I value rapid prototyping to
+                    quickly test hypotheses and validate ideas (some even call
+                    me the "Prototyping Wizard" 🧙‍♂️).
                   </p>
                 </div>
               </Card>
@@ -150,7 +147,7 @@ export default function Blog() {
               <Card color="lime" border="filled" stretch={true}>
                 <div className="text-left">
                   <h4 className="text-xl md:text-2xl  font-space-mono font-bold">
-                    Breadth with depth <span className="text-3xl">💡</span>
+                    Breadth With Depth <span className="text-3xl">💡</span>
                   </h4>
                   <p className="text-lg mt-4">
                     I see myself as a generalist but with proficient depth.
@@ -163,11 +160,11 @@ export default function Blog() {
               <Card color="lime" border="filled" stretch={true}>
                 <div className="text-left">
                   <h4 className="text-xl md:text-2xl  font-space-mono font-bold">
-                    Do it with passion <span className="text-3xl">🔥</span>
+                    Do It With Passion <span className="text-3xl">🔥</span>
                   </h4>
                   <p className="text-lg mt-4">
-                    Passionate about technology, coding, building products,
-                    life, health care, ... Passion is what drives me in my
+                    Passionate about technology, coding, building product, life,
+                    healthcare, and more! Passion is what drives me in my
                     day-to-day.
                   </p>
                 </div>
