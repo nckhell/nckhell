@@ -42,7 +42,7 @@ export default function Home({ posts }: HomePageProps) {
           </Tooltip>
         </div>
         <p className="font-hand text-3xl md:text-4xl -rotate-2 mt-3 md:mt-5 text-gray-800">
-          {`I'm Nick, `}
+          {`I am Nick, `}
           <span className="txt-clipping txt-clipping--subtle">
             Product Developer
           </span>

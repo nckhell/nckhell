@@ -34,7 +34,7 @@ export default function Blog() {
         </div>
         <div className="text-left mt-8 text-xl text-gray-700 leading-relaxed">
           <p>
-            I&apos;m a {getAge('1993-11-30')}-year-old{' '}
+            I am a {getAge('1993-11-30')}-year-old{' '}
             <span className="txt-clipping txt-clipping--affirmative font-bold">
               Product Developer, Builder, and Engineer
             </span>
@@ -150,8 +150,8 @@ export default function Blog() {
                     Breadth With Depth <span className="text-3xl">💡</span>
                   </h4>
                   <p className="text-lg mt-4">
-                    I see myself as a generalist but with proficient depth.
-                    I&apos;m always learning to uncover uncharted territories.
+                    I see myself as a generalist but with proficient depth. I am
+                    always learning to uncover uncharted territories.
                   </p>
                 </div>
               </Card>
