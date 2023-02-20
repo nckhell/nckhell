@@ -57,9 +57,9 @@ export default function Blog() {
           <p className="mt-4">
             I have a strong analytical, technical, design, and clinical
             skillset. I love solving problems and can execute at high speed with
-            great quality. I am hands-on type a guy and will not hesitate to get
-            my hands dirty writing code or to create some designs and prototypes
-            in Figma.
+            great quality. I am a hands-on type of guy and will not hesitate to
+            get my hands dirty writing code or creating some designs and
+            prototypes in Figma.
           </p>
           <p className="mt-4">
             Currently{' '}
