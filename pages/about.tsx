@@ -138,7 +138,7 @@ export default function Blog() {
                     I like to solve problems. From discovery to ideation to
                     implementation and testing. I value rapid prototyping to
                     quickly test hypotheses and validate ideas (some even call
-                    me the "Prototyping Wizard" 🧙‍♂️).
+                    me the &quot;Prototyping Wizard&quot; 🧙‍♂️).
                   </p>
                 </div>
               </Card>
