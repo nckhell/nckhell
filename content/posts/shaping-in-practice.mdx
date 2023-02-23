@@ -1,9 +1,70 @@
 ---
-date: '2023-02-20'
+date: '2023-02-23'
 title: Shaping In Practice
 preview: I am a big believer of Basecamp's Shape Up methodology to build product. Some would even call me a Shape Up evengalist. In this post, I would like to share with you a real life example of a pitch and how at Awell we are adapting the metholodogy to fit our needs and context.
+imageUrl: https://res.cloudinary.com/kkontichfc/image/upload/v1677155297/nckhell/levels_of_abstraction-bf55d00941aad5a9c895d24dfefcde27572b8cf35d839155839af190f84ed815_ejcply.jpg
 labels: Shape Up, Product Development, Methodology
-wip: true
 ---
 
-I am currently working on this post.
+At Awell, we are using Shape Up to drive our product development process. I love Shape Up for many reasons but one of the biggest benefits for a company at our stage is that **it allows us to stay lean and agile** while at the same time we can ship features fast
+
+However, **being fanatical and uncompromising about a methodology without really thinking about it or asking questions will not set you up for success**. I know because I have been there myself. When first reading the Shape Up book I thought “<i>This is amazing, we should do everything this way!</i>”. We tried that but it just didn’t work. I will definitely write more about that in future posts. Just remember that Shape Up provides a framework and guiding principles you can use but that more often than not will have to implement local adaptations depending on the context you are in (eg: the team you have, their skillset, …).
+
+One phase of Shape Up I would like to talk about in this post is the “**Shaping**” phase. Shaping is the process where you go from a problem statement (eg: a need expressed by a customer) to a solution that is de-risked enough that you are willing to bet on it so it makes it into the next cycle. The outcome of shaping is a pitch document that (minimally) summarizes the problem, constraints, solution, rabbit holes, and limitations.
+
+<figure className="w-full flex flex-col justify-center text-center py-8">
+  <a
+    href="https://agilefirst.io/content/images/2022/06/shape-up-basecamp-phases-work.png"
+    target="_blank"
+  >
+    <img
+      src="https://agilefirst.io/content/images/2022/06/shape-up-basecamp-phases-work.png"
+      alt="Rendering a form with Awell"
+      className="w-full sm:w-11/12 mx-auto rounded"
+    />
+  </a>
+  <figcaption className="pt-1">© Shape Up</figcaption>
+</figure>
+
+I would like to share a pitch that made it into our current cycle and talk about how we adapted the shaping and pitch writing process to something that works for us at our current stage. Have a look at the pitch document [here](https://awellhealth.atlassian.net/wiki/external/3454369793/OWVmNWRjMmQ2MjI0NDgyYzg1ZDkzMjVlZDRmYWJiODY?atlOrigin=eyJpIjoiNGJhMzEyMWU0ZDIyNDFlNThkNmJjM2U5ZTUzNDlmM2MiLCJwIjoiYyJ9).
+
+## High Fidelity versus Low Fidelity
+
+One of the principles of Shape Up is that pitches should be written at the right level of abstraction: not too vague and not too concrete. Learn more about why that is [here](https://basecamp.com/assets/books/shapeup/1.3/invoice_breadboard_5-b336abd287b752f0f38c15546d2d7a7981b9182733f1a0a9e8be4be4886a65be.png). There are methods like [breadboarding](https://basecamp.com/assets/books/shapeup/1.3/invoice_breadboard_5-b336abd287b752f0f38c15546d2d7a7981b9182733f1a0a9e8be4be4886a65be.png) & [fat marker sketches](https://domhabersack.com/api/articles/fat-marker-sketches/example.jpg) that can help you with finding the right level of abstraction.
+
+If you look at the pitch, you will see it is filled with high-fidelity screens. Let me explain to you why we are doing that:
+
+- **Team capacity**: we currently don’t have a product designer on the team which means the responsibility for most of the UI/UX decisions lies with me. Making these decisions within the cycle would be a stretch as my priorities often lay elsewhere. This could potentially delay the delivery and that is why we are doing a bit more work upfront.
+- **Design system**: although we currently don’t have a product designer on board, we had one in the past and he created quite an extensive design system we still use today. Creating these screens is thus a breeze as it basically uses existing components.
+- **Known territory**: you have features that build further on something you already have today and features that are brand new and you basically have to build from scratch. You might already have designs laying around for those that build on already existing concepts. Then there is no need to reinvent the wheel and you can just re-use what you have and tweak them to the problem you are currently solving.
+- **Team skillset**: Shape Up is all about responsibility and accountability. We assign pitches and not tasks and we trust the team to work on it within the boundaries of the pitch. We really have amazing engineers on the team but from past experiences, we found that a bit more guidance on the UI/UX yielded superior results versus them having the freedom to make these decisions (especially now that we don’t have a designer). Engineers are not designers and neither should they try to be, once in a while you find this amazing profile who is a rockstar engineer and has a great sense for UI/UX as well. But they are a rare breed.
+
+We do acknowledge the risks that come with it. It is easy to get stuck in tunnel vision early on if you are over-specifying the design too soon. We try to counter that by involving our engineers in the shaping process and it is also clear to the team that any design decision can be reconsidered during the implementation if there are good reasons for it.
+
+We still use fat marker sketches and breadboarding in some pitches and as our team matures and grows (eg: we can add a designer to the team), I would like our pitches to become “less concrete” so the team has more freedom to implement them in a way they think is best. We have already seen that our current team has made great strides forward over the past year in adopting Shape Up and I am confident that rather sooner than later we will be in such a position.
+
+## Future Press Release
+
+Not part of Shape Up but something we started adding to every pitch is a “Future Press Release” section. It basically requires you to think upfront about the desired outcomes of a solution. This “working backward” approach forces you to start thinking about the customer first, rather than with an idea and trying to bolt customers onto it. As a bonus, you can use it in your product newsletter or any other outgoing communications when the feature is actually released.
+
+While in theory, you should really write this first, in practice it is still often something we do at the end and sometimes a pitch might not have this section filled in. Definitely, something I want us to improve on.
+
+## Expected outcomes
+
+There are tons of things we could work on, so why should we work on this pitch? Explicitly writing down the expected outcomes helps us with that. The decision framework we currently use is that a pitch should either:
+
+- Have a direct impact on our North Star Metric
+- Contribute to an OKR (which we set every quarter)
+
+## How will we measure success?
+
+The product development lifecycle does not end when the feature is shipped. Measuring success is critical in understanding whether your prior assumptions & decisions you have made were correct. It is a crucial feedback mechanism to learn and improve for the future.
+
+Thinking upfront about the metrics you want to track is important as that might require some development resources or configuration in the tool you are using for product insights & analytics.
+
+<br />
+
+Shape Up is a fantastic framework to use but remember that local adaptations might
+be necessary to make it work for your team. These things are not set in stone and
+you can tweak processes as your team grows & matures or when the context you are
+in changes.
