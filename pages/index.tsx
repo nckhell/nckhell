@@ -8,7 +8,7 @@ import { Button } from '../components/button'
 import { Layout } from '../components/layout'
 import { SEO } from '../components/seo'
 import { Tooltip } from '../components/tooltip'
-import profilePic from '../public/images/nick.jpeg'
+import profilePic from '../public/images/profile_2.png'
 import { Post } from '../types/Post.types'
 import { getAllPosts } from '../utils/postUtils'
 
