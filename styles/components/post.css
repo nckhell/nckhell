@@ -55,5 +55,5 @@
 
 .markdown-content ol:not(.code-block ol) li:after {
   content: counter(step-counter);
-  @apply inline-block bg-slate-200 text-slate-600 rounded-full font-medium mr-4 px-2 py-0.5 absolute left-0 top-0.5;
+  @apply inline-block bg-yellow-300 text-slate-800 rounded-full text-base font-medium mr-4 px-2 py-0.5 absolute left-0 top-1;
 }

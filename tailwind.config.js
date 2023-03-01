@@ -2,8 +2,9 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './content/posts/*.{mdx}',
   ],
-  purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  purge: ['./components/**/*.tsx', './pages/**/*.tsx', './content/posts/*.mdx'],
   theme: {
     extend: {
       fontFamily: {
